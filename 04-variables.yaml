@@ -4,7 +4,7 @@
     course: "DevOPs with aws"
     Duration: "120HRS"
     Trainer "sivakumar reddy M"
-  tasks: 
+  tasks:    
   - name: print the information
     ansible.builtin.debug:
       msg: "Hi, I am learining {{course}} , Duration is {{Duration}}.Trainer:{{Trainer}}"
