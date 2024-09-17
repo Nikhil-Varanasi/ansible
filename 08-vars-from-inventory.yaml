@@ -2,5 +2,5 @@
   hosts: web
   tasks:
   - name: print the infromation
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "Hi , i am learning {{COURSE}}, Duration is {{DURATION}},Trainer:{{TRAINER}}"
