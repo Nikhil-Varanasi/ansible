@@ -3,7 +3,7 @@
   vars:
     course: "DevOPs with aws"
     Duration: "120HRS"
-    Trainer "sivakumar reddy M"
+    Trainer: "sivakumar reddy M"
   tasks:    
   - name: print the information
     ansible.builtin.debug:
