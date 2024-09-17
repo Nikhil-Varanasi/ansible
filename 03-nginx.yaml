@@ -2,6 +2,6 @@
   hosts: web
   tasks:
   - name: installing-nginx
-    ansible.builtin.package:
+    ansible.builtin.package: #heterogenous modeules that can work on all distributions
       name: nginx
       state: present
