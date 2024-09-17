@@ -2,6 +2,6 @@
   hosts: web
   tasks:
   - name: installing-nginx
-    anisble.module.install:
+    ansible.module.package:
       name: nginx
       state: present
