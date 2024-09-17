@@ -1,8 +1,7 @@
-- name: nginx-install
+- name: nginx install and run
   hosts: web
   tasks:
   - name: installing-nginx
-    anisble.module.install
+    anisble.module.install:
       name: nginx
       state: present
-      
