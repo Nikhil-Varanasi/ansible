@@ -10,7 +10,7 @@
       msg: "Hi, I am learining {{course}} , Duration is {{Duration}}.Trainer:{{Trainer}}"
   - name: print the information again
     vars:
-      course: "DevOPs with aws" #task level varibles
+      course: "Ansible" #task level varibles
     ansible.builtin.debug:
       msg: "Hi, I am learining {{course}} , Duration is {{Duration}}.Trainer:{{Trainer}}"
   - name: print the information
