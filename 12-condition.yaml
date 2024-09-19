@@ -1,5 +1,5 @@
 - name: chech a number is lessthan 10 or not
-  web: local
+  hosts: local
   connection: local
   vars_prompt:
   - name: number
