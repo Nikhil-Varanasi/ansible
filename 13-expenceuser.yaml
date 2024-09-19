@@ -1,0 +1,11 @@
+- name: check and add expence user
+  hosts: web
+  become: yes
+  tasks:
+  - name: check user exist or not
+    ansible.builtin.command: id expense
+    register: USER #here USer is avaible that gets ouptput of above cmd
+
+  - name: print the user information
+    ansible.builtin.debug:
+      msg: "user info: {{ USER }}" 
