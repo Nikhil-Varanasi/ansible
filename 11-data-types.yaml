@@ -1,6 +1,6 @@
 - name: devops course information
   hosts: local
-  connection: local #for local host
+  connection: local #for local host it will no longer check for username and password
   vars:
     course: "DevOps with AWS" #string
     Duration: 120 #number
