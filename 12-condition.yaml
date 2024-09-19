@@ -1,4 +1,4 @@
-- name: check a number is less that 10 or not
+- name: "check a number is less that 10 or not"
   web: local
   connection: local
   vars_prompt:
