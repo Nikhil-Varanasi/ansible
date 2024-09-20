@@ -5,7 +5,7 @@
   - name: print names
     ansible.builtin.package:
       name: "{{ item }}"
-      state: present
+      state: absent
     loop:
     - mysql
     - nginx
