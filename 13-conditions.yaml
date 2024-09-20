@@ -1,5 +1,5 @@
 - name: check and add expence user
-  hosts: web
+  hosts: local
   become: yes
   tasks:
   - name: check user exist or not
