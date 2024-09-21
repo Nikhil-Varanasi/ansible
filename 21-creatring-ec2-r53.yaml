@@ -1,0 +1,22 @@
+#! /bin/bash
+- name: creating ec2 and r53 routers
+  hosts: local
+  connection: local
+  vars:
+    subnet_id:  #reaplce with your subnet id in networks
+    sg_id:      #replace with yor sg id
+    ami_id:     #reaplace with your ami_id
+    instances:
+    - mysql
+    - backend
+    - frontend
+  tasks:
+  - name: creating ec2 instaces
+    amazon.aws.ec2_instatces:
+      name: "{{ item }}"
+      vpc_subnet_id: "{{ subnet_id }}"
+      instance_type: "t3.micro"
+      security_group: "{{ sg_id }}"
+      image id: "{{ ami_id}}"
+    loop: "{{ instances }}"
+    register: ec2_instances
