@@ -1,4 +1,4 @@
-- name: demo on filters
+- name: Demo on filters
   hosts: local
   connnection: local
   tasks:
