@@ -3,16 +3,16 @@
   hosts: local
   connection: local
   vars:
-    subnet_id:  #reaplce with your subnet id in networks
-    sg_id:      #replace with yor sg id
-    ami_id:     #reaplace with your ami_id
+    subnet_id: subnet-0a148f6970b4c6195  #reaplce with your subnet id in networks
+    sg_id: sg-079ef83b9df9b1bd9  #replace with yor sg id
+    ami_id: ami-09c813fb71547fc4f  #reaplace with your ami_id
     instances:
     - mysql
     - backend
     - frontend
   tasks:
   - name: creating ec2 instaces
-    amazon.aws.ec2_instatces:
+      amazon.aws.ec2_instance:
       name: "{{ item }}"
       vpc_subnet_id: "{{ subnet_id }}"
       instance_type: "t3.micro"
