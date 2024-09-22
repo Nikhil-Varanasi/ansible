@@ -8,9 +8,6 @@
     ami_id: ami-09c813fb71547fc4f #reaplace with your ami_id
     instances:
     - mysql
-    - backend
-    - frontend
-    zone: 
   tasks:
   - name: creating ec2 instaces
     amazon.aws.ec2_instance:
