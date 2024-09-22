@@ -3,9 +3,9 @@
   hosts: local
   connection: local
   vars:
-    subnet_id: subnet-0a148f6970b4c6195  #reaplce with your subnet id in networks
-    sg_id: sg-079ef83b9df9b1bd9  #replace with yor sg id
-    ami_id: ami-09c813fb71547fc4f  #reaplace with your ami_id
+    subnet_id: subnet-08859a364ec730678 #reaplce with your subnet id in networks
+    sg_id: sg-03e9711dd84e7c3ab #replace with yor sg id
+    ami_id: ami-09c813fb71547fc4f #reaplace with your ami_id
     instances:
     - mysql
     - backend
